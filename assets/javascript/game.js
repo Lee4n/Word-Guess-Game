@@ -10,16 +10,14 @@ var wordBank = [
 ];
 // choose a random word from the word bank
 var word = wordBank[Math.floor(Math.random() * wordBank.length)];
-console.log(word);
+document.getElementById("currentWord").innerHTML = word;
 // Set up the answer array with for loop
 var answer = [];
 for (let i = 0; i < word.length; i++) {
     answer[i] = ["_"];
 }
-console.log(answer);
+document.getElementById("answer").innerHTML = answer.join(" ");
 // The game loop
-
-// Show the player their progress
 
 // Get a guess from the player
 
