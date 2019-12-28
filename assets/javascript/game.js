@@ -1,0 +1,23 @@
+// make array of words
+var wordBank = [
+    'dog',
+    'cat',
+    'monkey',
+    'water',
+    'earth',
+    'fire',
+    'air'
+];
+// choose a random word
+
+// Set up the answer array
+
+// The game loop
+
+// Show the player their progress
+ 
+// Get a guess from the player
+   
+// Exit the game loop
+   
+// Update the game state with the guess
