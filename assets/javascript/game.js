@@ -1,4 +1,4 @@
-// make array of words
+// make array of words #########PLACEHOLDERS FOR NOW###########
 var wordBank = [
     'dog',
     'cat',
@@ -9,7 +9,8 @@ var wordBank = [
     'air'
 ];
 // choose a random word
-
+var word = wordBank[Math.floor(Math.random() * wordBank.length)];
+console.log(word)
 // Set up the answer array
 
 // The game loop
