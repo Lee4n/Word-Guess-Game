@@ -38,13 +38,10 @@ function setLabels() {
     document.getElementById("answer").innerHTML = answer.join(" ");
     document.getElementById("remain").innerHTML = remain;
 }
-// what does this do?
+// this function begins after a key event
 document.onkeypress = function (keyObject) {
 
     if (remain > 0) {
-        console.log(answer);
-        console.log(word, answer.join(''));
-
         if (keyObject.keyCode >= 97 && keyObject.keyCode <= 122) {
             if (word.includes(keyObject.key)) {
                 for (let i = 0; i < word.length; i++) {
@@ -62,13 +59,20 @@ document.onkeypress = function (keyObject) {
                     document.getElementById("guessedLetter").innerHTML = guessedLetter;
                 }
             }
-
         }
-
+    } else {
+        setLabels();
+        if (wins > 0) {
+            wins--;
+            document.getElementById("wins").innerHTML = wins;
+            setLabels();
+        }
     }
+    // icrements win counter by 1 every win
     if (answer.join('') == word) {
         wins++;
         document.getElementById("wins").innerHTML = wins;
         setLabels();
     }
 };
+
