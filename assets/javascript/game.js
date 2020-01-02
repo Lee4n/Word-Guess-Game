@@ -5,7 +5,7 @@ var word;
 var answer;
 var guessedLetter;
 var remain;
-// calling setLabels function
+// calling setLabels function to reset game on refresh
 setLabels();
 //this function chooses a word from the word bank array @ random
 function chooseWord() {
