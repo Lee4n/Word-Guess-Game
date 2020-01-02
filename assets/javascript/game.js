@@ -10,13 +10,15 @@ setLabels();
 //this function chooses a word from the word bank array @ random
 function chooseWord() {
     var wordBank = [
-        'dog',
-        'cat',
-        'monkey',
-        'water',
-        'earth',
-        'fire',
-        'air'
+        'cello',
+        'harp',
+        'violin',
+        'banjo',
+        'guitar',
+        'trumpet',
+        'trombone',
+        'accordian',
+        'piano'
     ];
     return wordBank[Math.floor(Math.random() * wordBank.length)];
 }
@@ -28,7 +30,7 @@ function hideAnswer() {
     }
     return answerArray;
 }
-// 
+// this function resets any changed elements
 function setLabels() {
     word = chooseWord();
     answer = hideAnswer();
