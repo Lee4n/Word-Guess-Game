@@ -5,3 +5,13 @@
     text-align: center;
     height: 100vh;
 }
+
+.gameBorder {
+    border: 5px dotted white;
+}
+
+#banner {
+    opacity: 0.5;
+    width: 100%;
+    height: auto;
+}
